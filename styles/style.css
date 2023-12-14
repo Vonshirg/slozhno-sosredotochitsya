@@ -1,5 +1,71 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+html {
+  height: 100vh;
+  block-size: 100%;
+}/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background-color: var(--main-background-color);/* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  padding: 10px;
+  
+}
+
+header{
+  background: url(../images/cover-image-dark.png) no-repeat content-box center / cover;
+}
+
+.decorated-zone{
+  display: grid;
+ 
+}
+
+.header__theme-menu-list{
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  align-items: flex-end;
+  
+}
+
+.header__theme-menu-item{
+  width: 70px;
+  height: 26px;
+display: flex;
+justify-content: center;
+}
+
+.header__theme-menu-button{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  background-color: transparent;
+  color: var(--title-background-color);
+  border: none;
+  padding: 0 13px;
+}
+
+.cover__title{
+  color: var(--title-color);
+text-shadow: 4px 4px 0px var(--title-background-color);
+font-family: IBM Plex Mono;
+font-size: 116px;
+font-style: normal;
+font-weight: 700;
+line-height: 82.5%;
+
+}
+
+.header__epigraph{
+  display: grid;
+  justify-content: end;
+  grid-template-columns: minmax(355px, 491px);
+}
+
+.header__text{
+  background-color: var(--title-background-color);
+  color:  var(--main-background-color);
+font-family: IBM Plex Mono;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 23.4px; /* 130% */ 
 }
