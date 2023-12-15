@@ -1,16 +1,16 @@
 html {
-  height: 100vh;
+  height: 100lvh;
   block-size: 100%;
 }/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
   background-color: var(--main-background-color);/* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   padding: 10px;
-  
+  background: var(--header-image);
 }
 
 header{
-  background: url(../images/cover-image-dark.png) no-repeat content-box center / cover;
+  position: relative;
 }
 
 .decorated-zone{
@@ -18,19 +18,89 @@ header{
  
 }
 
+.header-lamp-zone{
+  gap:3px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: var(--rec-color);
+  text-align: center;
+font-family: IBM Plex Mono;
+font-size: 18px;
+font-weight: 400;
+line-height: 25px; 
+width: 52px;
+justify-self: end; 
+position: absolute;
+}
+
+.lamp{
+  width: 25px;
+  height: 25px; 
+}
+
+.lamp::after{
+  content: '';
+  display: flex;
+  width: 25px;
+  height: 25px;
+  border-block-start: 1px solid var(--button-color);
+  border-inline-end: 1px solid var(--button-color); 
+  background-image: url(../images/Ellipse.svg);
+  background-repeat: no-repeat;
+}
+
+.header__theme-menu{
+  display:grid;
+  padding-block: 13vw;
+}
+
+@media (min-width: 1024px){
+  .header__theme-menu{
+  padding-block-start: 0px;
+  }
+}
+
 .header__theme-menu-list{
   display: flex;
   flex-direction: column;
   gap: 13px;
   align-items: flex-end;
-  
-}
+  }
+
+  .header__theme-menu-button:hover{
+    outline:  1px solid var(--button-color);
+    }
+
+    .header__theme-menu-button:disabled{
+      outline:  1px solid var(--button-color);
+    }
+
+    .header__theme-menu-button:focus-visible{
+      outline: none;
+    }
+    .header__theme-menu-button:focus-visible{
+      text-decoration: underline 1px solid var(--button-color);
+    }
+
 
 .header__theme-menu-item{
   width: 70px;
   height: 26px;
 display: flex;
 justify-content: center;
+font-family: IBM Plex Mono;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px;
+}
+
+@media (min-width: 1024px) {
+  .header__theme-menu-list{
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 .header__theme-menu-button{
@@ -38,14 +108,14 @@ justify-content: center;
   justify-content: center;
   align-items: center; 
   background-color: transparent;
-  color: var(--title-background-color);
+  color: var(--button-color);
   border: none;
   padding: 0 13px;
 }
 
 .cover__title{
   color: var(--title-color);
-text-shadow: 4px 4px 0px var(--title-background-color);
+text-shadow: 4px 4px 0px #FF0070;
 font-family: IBM Plex Mono;
 font-size: 116px;
 font-style: normal;
@@ -54,15 +124,47 @@ line-height: 82.5%;
 
 }
 
+@media (width < 768px){
+  .cover__title{
+    padding-block-end: 8vh;
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  }
+}
+
+@media (768px <= width < 1024px){
+  .cover__title{
+    padding-block-end: 16vh;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+}
+
+@media (1024px <= width  ){
+  .cover__title{
+    padding-block-end: 8vw;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+}
+
 .header__epigraph{
   display: grid;
   justify-content: end;
-  grid-template-columns: minmax(355px, 491px);
+  grid-template-columns: minmax(355px, clamp(355px, 48vw, 494px));
 }
 
-.header__text{
+.decorated-zone::after{
+  content: '';
+  display: flex;
+  width: 25px;
+  height: 25px;
+  border-block-end: 1px solid var(--button-color);
+  border-inline-start: 1px solid var(--button-color);
+  margin-block-start: calc(4vw + 11vh - 10px); 
+}
+
+.title-decor{
+  display: flex;
   background-color: var(--title-background-color);
-  color:  var(--main-background-color);
+  color:  var(--color-text-with-background);
 font-family: IBM Plex Mono;
 font-size: 18px;
 font-style: normal;

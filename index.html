@@ -5,22 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сложно сосредоточиться</title>
+    <link rel="icon" type="ico" href="./images/favicon.ico">
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/dark.css" />
     <link rel="stylesheet" href="./styles/light.css" />
-    <link rel="stylesheet" href="./styles/variables.css" />
-  </head>
+      </head>
   <body class="page">
     <header class="header decorated-zone">
+      <div class="header-lamp-zone">
+        <span>REC</span>
+        <div class="lamp" aria-hidden="true">
+        </div>
+      </div>
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
             <button
               class="header__theme-menu-button header__theme-menu-button_type_light"
             >
-              День
+              день
             </button>
           </li>
           <li class="header__theme-menu-item">
@@ -28,20 +34,20 @@
               class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
               disabled
             >
-              Авто
+              авто
             </button>
           </li>
           <li class="header__theme-menu-item">
             <button
               class="header__theme-menu-button header__theme-menu-button_type_dark"
             >
-              Неон
+              неон
             </button>
           </li>
         </ul>
       </nav>
       <h1 class="cover__title">no focus</h1>
-      <h2 class="header__epigraph"><div class="header__text">Что делать, когда не можешь делать ничего Или почему нам так сложно сконцентрироваться, особенно когда очень надо</div></h2>
+      <article class="header__epigraph"><p class="title-decor">Что делать, когда не можешь делать ничего <p class="title-decor">Или почему нам так сложно сконцентрироваться, особенно когда очень надо</p></p></article>
     </header>
     <script src="./scripts/script.js"></script>
   </body>
