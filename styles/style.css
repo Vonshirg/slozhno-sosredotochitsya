@@ -107,6 +107,7 @@ header {
 
 .header__theme-menu-button:hover {
   outline: 1px solid var(--hover-button-color);
+  cursor: pointer;
 }
 
 .header__theme-menu-button:disabled {
