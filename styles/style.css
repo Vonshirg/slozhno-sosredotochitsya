@@ -27,6 +27,11 @@ header {
   display: grid;
   grid-template-rows: min-content 2fr 1fr min-content;
 }
+@media (768px <= width < 1024px) {
+  .header {
+    grid-template-rows: min-content 1fr 1fr min-content;
+  }
+}
 
 .header-lamp-zone {
   position: absolute;
@@ -163,7 +168,8 @@ header {
 
 @media (768px <= width < 1024px) {
   .cover__title {
-    padding-block-start: 10px;
+    padding-block-start: 80px;
+
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
@@ -192,7 +198,8 @@ header {
 
 @media (768px <= width < 1024px) {
   .header__epigraph {
-    padding-block-end: 140px;
+    align-content: center;
+    padding-block-end: 50px;
   }
 }
 
@@ -264,9 +271,9 @@ main {
   gap: 20px;
 }
 
-@media (width >= 768px) {
+@media (1024px > width >= 768px) {
   .section__hard__concentration {
-    grid-template-columns: 1fr 2.04fr;
+    grid-template-columns: 1fr 2fr;
   }
 }
 
