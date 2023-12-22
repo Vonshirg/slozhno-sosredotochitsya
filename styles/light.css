@@ -33,8 +33,7 @@
     --header-image: url(../images/cover-image-light.png) no-repeat content-box center / cover ;
     --rec-color: transparent;  
     --section-title-color:#353430;  
-    },
-  
+    }  
 }
 
 .page.theme_light .lamp::after{
