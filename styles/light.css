@@ -38,12 +38,12 @@
   }
 }
 
-.page.theme_light .lamp::after {
+.page.theme_light .decorated-zone::before {
   background: none;
 }
 
 @media (prefers-color-scheme: light) {
-  .page.theme_auto .lamp::after {
+  .page.theme_auto .decorated-zone::before {
     background: none;
   }
 }

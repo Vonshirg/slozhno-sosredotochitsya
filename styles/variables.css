@@ -4,6 +4,10 @@
 */
 /* stylelint-disable-next-line rule-empty-line-before */
 :root {
+  --font-family: "IBM Plex Mono", monospace, sans-serif;
+  --font-weight: 400;
+  --font-size: 18px;
+  --line-height: 25px;
   --main-background-color: #000028;
   --title-background-color: #ff0070;
   --button-color: #ff0070;
