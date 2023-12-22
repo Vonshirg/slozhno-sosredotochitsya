@@ -4,19 +4,13 @@ html {
 }
 
 .page {
-  padding: 0 10px;
   background: var(--header-image);
   background-color: var(--main-background-color);
   background-attachment: fixed;
 }
 
-@media (768px <= width) {
-  .page {
-    padding: 0 20px;
-  }
-}
-
 header {
+  padding: 0 10px;
   position: relative;
   height: 100vh;
   padding-block: 10px;
@@ -24,6 +18,7 @@ header {
 
 @media (768px <= width) {
   header {
+    padding: 0 20px;
     padding-block: 20px;
   }
 }
@@ -42,16 +37,19 @@ header {
   gap: 3px;
   width: 60px;
   padding-top: 10px;
+  margin-inline-end: -10px;
   color: var(--rec-color);
   font-family: "IBM Plex Mono";
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
   text-align: center;
+  padding-inline-end: 20px;
 }
 
 @media (768px <= width) {
   .header-lamp-zone {
+    padding-inline-end: 30px;
     padding-top: 20px;
   }
 }
@@ -86,7 +84,9 @@ header {
 
 @media (min-width: 1024px) {
   .header__theme-menu {
+    width: fit-content;
     align-self: start;
+    justify-self: center;
     padding-block: 0;
   }
 }
@@ -220,17 +220,15 @@ header {
 }
 
 main {
+  padding: 40px 10px;
   display: grid;
   gap: 50px;
-  padding-block-start: 40px;
-  padding-block-end: 40px;
 }
 
 @media (668px < width) {
   main {
     gap: 80px;
-    padding-block-start: 60px;
-    padding-block-end: 60px;
+    padding: 60px 20px;
   }
 }
 
@@ -446,12 +444,12 @@ main {
   grid-template-columns: 1fr;
   grid-template-rows: min-content 1fr min-content;
   height: 100vh;
-  padding-block: 10px;
+  padding: 10px 10px;
 }
 
 @media (width >= 768px) {
   .footer {
-    padding-block: 20px;
+    padding: 20px 20px;
   }
 }
 
