@@ -4,15 +4,16 @@ html {
 }
 
 .page {
+  font-family: "IBM Plex Mono", Arial, sans-serif;
   background: var(--header-image);
   background-color: var(--main-background-color);
   background-attachment: fixed;
 }
 
 header {
-  padding: 0 10px;
   position: relative;
   height: 100vh;
+  padding: 0 10px;
   padding-block: 10px;
 }
 
@@ -37,20 +38,19 @@ header {
   gap: 3px;
   width: 60px;
   padding-top: 10px;
-  margin-inline-end: -10px;
+  padding-inline-end: 10px;
   color: var(--rec-color);
-  font-family: "IBM Plex Mono";
+  font-family: "IBM Plex Mono", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
   text-align: center;
-  padding-inline-end: 20px;
 }
 
 @media (768px <= width) {
   .header-lamp-zone {
-    padding-inline-end: 30px;
     padding-top: 20px;
+    padding-inline-end: 20px;
   }
 }
 
@@ -84,9 +84,9 @@ header {
 
 @media (min-width: 1024px) {
   .header__theme-menu {
-    width: fit-content;
-    align-self: start;
     justify-self: center;
+    align-self: start;
+    width: fit-content;
     padding-block: 0;
   }
 }
@@ -126,7 +126,7 @@ header {
   justify-content: center;
   width: 70px;
   height: 26px;
-  font-family: "IBM Plex Mono";
+  font-family: "IBM Plex Mono", sans-serif;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
@@ -147,7 +147,7 @@ header {
 .cover__title {
   align-self: center;
   color: var(--title-color);
-  font-family: "IBM Plex Mono";
+  font-family: "IBM Plex Mono", sans-serif;
   font-weight: 700;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 82.5%;
@@ -206,7 +206,7 @@ header {
   display: flex;
   height: fit-content;
   color: var(--color-text-with-background);
-  font-family: "IBM Plex Mono";
+  font-family: "IBM Plex Mono", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 23.4px; /* 130% */
@@ -220,9 +220,9 @@ header {
 }
 
 main {
-  padding: 40px 10px;
   display: grid;
   gap: 50px;
+  padding: 40px 10px;
 }
 
 @media (668px < width) {
@@ -234,7 +234,7 @@ main {
 
 .section__title {
   color: var(--section-title-color);
-  font-family: "IBM Plex Mono";
+  font-family: "IBM Plex Mono", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 23.4px;
@@ -242,7 +242,7 @@ main {
 
 .section__text {
   color: var(--main-text-color);
-  font-family: "IBM Plex Mono";
+  font-family: "IBM Plex Mono", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 23.4px;
@@ -390,7 +390,7 @@ main {
 }
 
 @media (width >= 768px) {
-  .gallery p {
+  .gallery .title-decor {
     grid-column-start: 1;
     grid-column-end: 4;
   }
